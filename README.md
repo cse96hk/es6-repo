@@ -3,7 +3,6 @@
 > 1. ES6 자바스크립트 최신 문법
 
 ### 1. 다음의 코드를 es6 문법을 이용하여 재작성 하시오
-🌱 예제
 ```
 let name = "noona's fruit store";
 let fruites = ["banana", "apple", "mango"];
@@ -34,7 +33,6 @@ console.log(storeEs6);
 ```
 
 ### 2. es6문법을 이용하여 다음과 같이 출력하시오.
-🌱 예제
 ```
 제 가게 이름은 noona's fruit store 입니다. 위치는 Seoul에 있습니다.
 ```
@@ -53,7 +51,6 @@ console.log(position);
 ```
 
 ### 3. 다음 코드를 Destructoring 을 이용하여 해결하시오
-🌱 예제
 ```
 function calculate(obj) { // 함수 안을 바꾸시오
     return obj.a+obj.b+obj.c
@@ -69,7 +66,6 @@ console.log(result);
 ```
 
 ### 4. 다음 문제에 정답이 true 가 나오게 하시오.
-🌱 예제
 ```
 let nam="noona store"
 let fruits = ["banana", "apple", "mango"]
@@ -106,7 +102,6 @@ console.log(findStoreEs6({ name4, fruits4, address4 }));
 ```
 
 ### 5. 다음과 같이 프린트 되게 코드를 바꾸시오.
-🌱 예제
 ```
 function getNumber() {
     let array = [1,2,3,4,5,6] // 여기서부터 바꾸시오
@@ -134,7 +129,6 @@ console.log(getNumber());
 ```
 
 ### 6.다음의 결과가 true 가 되게 하시오.
-🌱 예제
 ```
 function getCalendar(first, ...rest) {
     return (
@@ -158,7 +152,6 @@ console.log(getCalendar("january", "Febuary", "March"));
 // true
 ```
 ### 7. 두 어레이 들 중 최소 값을 찾는 함수를 완성하시오.
-🌱 예제
 ```
 function getMinimum() {
     let a = [45,23,78]
@@ -179,7 +172,6 @@ console.log(getMinimum());
 ```
 
 ### 8. 다음의 함수를 화상표 함수로 바꾸시오.
-🌱 예제
 ```
 function sumNumber() {
     //여기서부터 바꾸시오
@@ -201,7 +193,6 @@ console.log(sumFunction(3, 5));
 ```
 
 ### 9. 다음의 함수를 화상표 함수로 바꾸시오.
-🌱 예제
 ```
 function sumNumber() {
     // 여기를 바꾸시오
