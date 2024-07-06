@@ -11,7 +11,7 @@ let address = "Seoul";
 let store = { name: name, fruites: fruites, address: address };
 console.log(store);
 ```
-🌱 풀이
+#### 🔥 풀이
 ``` 
 let name = "noona's fruit store";
 let fruites = ["banana", "apple", "mango"];
@@ -38,7 +38,7 @@ console.log(storeEs6);
 ```
 제 가게 이름은 noona's fruit store 입니다. 위치는 Seoul에 있습니다.
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 let name = "noona's fruit store";
 let fruites = ["banana", "apple", "mango"];
@@ -60,7 +60,7 @@ function calculate(obj) { // 함수 안을 바꾸시오
 }
 calculate({a:1,b:2, c:3})
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 const calculateEs6 = ({ a, b, c }) => a + b + c;
 const result = calculateEs6({ a: 1, b: 2, c: 3 });
@@ -83,7 +83,7 @@ function findDtore(obj){
 }
 console.log(findStore({name,fruits,address}))
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 let name4 = "noona store";
 let fruits4 = ["banana", "apple", "mango"];
@@ -114,7 +114,7 @@ function getNumber() {
 }
 console.log(getNumber()) // 결과값 {first:1, third:3, forth:4}
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 function getNumber() {
     let array = {
@@ -146,7 +146,7 @@ function getCalendar(first, ...rest) {
 }
 console.log(getCalendar()) // 여기를 바꾸시오
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 function getCalendar(first = "january", ...rest) {
     return first === "january" 
@@ -167,7 +167,7 @@ function getMinimum() {
 }
 console.log(getMinimum())
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 function getMinimum() {
     let a = [45, 23, 78];
@@ -189,7 +189,7 @@ function sumNumber() {
     return sum(40,10)
 }
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 function sumNumbers() {
     const sum = (a, b) => a + b;
@@ -216,7 +216,7 @@ function sumNumber() {
 }
 console.log(sumNumber())
 ```
-🌱 풀이
+#### 🔥 풀이
 ```
 function sumNumbers2() {
     return addNumbers(1)(2)(3);
