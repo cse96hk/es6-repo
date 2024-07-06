@@ -110,7 +110,7 @@ console.log(findStoreEs6({ name4, fruits4, address4 }));
 ```
 function getNumber() {
     let array = [1,2,3,4,5,6] // 여기서부터 바꾸시오
-    ㄱㄷ셔구 {first, third, forth}
+    return {first, third, forth}
 }
 console.log(getNumber()) // 결과값 {first:1, third:3, forth:4}
 ```
@@ -131,4 +131,98 @@ function getNumber() {
 }
 console.log(getNumber()); 
 // {first: 1, third: 3, forth: 4}
+```
+
+### 6.다음의 결과가 true 가 되게 하시오.
+🌱 예제
+```
+function getCalendar(first, ...rest) {
+    return (
+        first === "January" &&
+        rest[0] === "Febuary" &&
+        rest[1] === "Maarch" &&
+        rest[2] === undefined
+    );
+}
+console.log(getCalendar()) // 여기를 바꾸시오
+```
+🌱 풀이
+```
+function getCalendar(first = "january", ...rest) {
+    return first === "january" 
+    && rest[0] === "Febuary" 
+    && rest[1] === "March" 
+    && rest[2] === undefined;
+}
+console.log(getCalendar("january", "Febuary", "March")); 
+// true
+```
+### 7. 두 어레이 들 중 최소 값을 찾는 함수를 완성하시오.
+🌱 예제
+```
+function getMinimum() {
+    let a = [45,23,78]
+    let b = [54,11,9]
+    return Math.min() // 여기를 바꾸시오
+}
+console.log(getMinimum())
+```
+🌱 풀이
+```
+function getMinimum() {
+    let a = [45, 23, 78];
+    let b = [54, 11, 9];
+    return Math.min(...a, ...b);
+}
+console.log(getMinimum());
+// 9
+```
+
+### 8. 다음의 함수를 화상표 함수로 바꾸시오.
+🌱 예제
+```
+function sumNumber() {
+    //여기서부터 바꾸시오
+    const sum = function(a,b) {
+        return a+b;
+    }
+    return sum(40,10)
+}
+```
+🌱 풀이
+```
+function sumNumbers() {
+    const sum = (a, b) => a + b;
+    return sum;
+}
+const sumFunction = sumNumbers();
+console.log(sumFunction(3, 5));
+//8
+```
+
+### 9. 다음의 함수를 화상표 함수로 바꾸시오.
+🌱 예제
+```
+function sumNumber() {
+    // 여기를 바꾸시오
+    return addNumber(1)(2)(3);
+    function addNumber(a) {
+        return function(b) {
+            return function(c) {
+                return a+b+c;
+            };
+        };
+    }
+}
+console.log(sumNumber())
+```
+🌱 풀이
+```
+function sumNumbers2() {
+    return addNumbers(1)(2)(3);
+}
+
+const addNumbers = (a) => (b) => (c) => a + b + c;
+console.log(sumNumbers2());
+// 6
 ```
