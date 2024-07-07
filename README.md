@@ -127,6 +127,21 @@ function getNumber() {
 console.log(getNumber()); 
 // {first: 1, third: 3, forth: 4}
 ```
+#### 피드백
+- 5번문제는 array에 관한 것이니, 정답코드 한번 살펴보세요~
+```
+// 정답보고  다시 체크 함
+function getNumber() {
+    let array = [1,2,3,4,5,6] // 이부분은 변경필요 없습니다.
+    //
+    let [first, , third, forth] = array
+    return {first, third, forth}
+}
+console.log(getNumber())
+
+// Object {first: 1, third: 3, forth: 4}
+```
+
 
 ### 6.다음의 결과가 true 가 되게 하시오.
 ```
